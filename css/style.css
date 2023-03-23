@@ -1,97 +1,112 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
 }
 
 body {
-    display: grid;
-    grid-template-areas: "header" "nav" "section-1" "section-2" "aside" "footer";
-    grid-template-columns: auto;
-    grid-template-rows: 100px 75px auto 2fr 1fr 10%;
-    row-gap: 5px;
-    column-gap: 5px;
+  display: grid;
+  grid-template-areas: "header" "nav" "section-1" "section-2" "aside" "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 100px 75px auto 2fr 1fr 10%;
+  row-gap: 5px;
+  column-gap: 5px;
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        grid-template-areas: "header" "nav" "section-1" "section-2" "aside" "footer";
-        grid-template-columns: auto;
-        grid-template-rows: 100px 1fr 3fr 2fr 10%;
-        row-gap: 10px;
-        column-gap: 10px;
-    }
+  body {
+    grid-template-areas: "header" "nav" "section-1" "section-2" "aside" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 100px 1fr 3fr 2fr 10%;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
 }
-
 @media screen and (min-width: 1024px) {
-    body {
-        min-height: 100vh;
-        width: 100%;
-        grid-template-areas: "header header" "nav nav" "section-1  aside" "section-2  aside" "footer     footer";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 100px 1fr 3fr 2fr 1fr;
-        row-gap: 20px;
-        column-gap: 20px;
-    }
+  body {
+    min-height: 100vh;
+    width: 100%;
+    grid-template-areas: "header header" "nav nav" "section-1  aside" "section-2  aside" "footer     footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 1fr 3fr 2fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
 }
-
 header {
-    background-color: rgb(0, 0, 0);
-    grid-area: header;
-    margin: auto;
+  background-color: rgb(0, 0, 0);
+  grid-area: header;
+  margin: auto;
 }
 
 #Destacados {
-    background-color: rgb(255, 255, 255);
-    grid-area: section-1;
+  background-color: rgb(255, 255, 255);
+  grid-area: section-1;
+  margin: auto;
 }
 
 section {
-    background-color: rgb(255, 255, 255);
-    grid-area: section-2;
+  background-color: rgb(255, 255, 255);
+  grid-area: section-2;
+  margin: auto;
+  justify-content: center;
 }
 
 aside {
-    background-color: rgb(255, 255, 255);
-    grid-area: aside;
+  background-color: rgb(255, 255, 255);
+  grid-area: aside;
+  position: relative;
 }
 
 footer {
-    background-color: white;
-    grid-area: footer;
+  background-color: white;
+  grid-area: footer;
+  text-align: center;
 }
 
 button {
-    background-color: black;
-    cursor: pointer;
-    padding: 10px 12px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    border-radius: 2px;
+  background-color: black;
+  cursor: pointer;
+  padding: 10px 12px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 2px;
 }
 
 .redes {
-    position: relative;
-    bottom: 150px;
-    right: 40px;
-    position: fixed;
-    width: 50px;
-    height: 50px;
+  position: relative;
+  bottom: 150px;
+  right: 40px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #radio {
-    align-items: center;
+  align-items: center;
 }
 
 #Navbar {
-    position: relative;
-    z-index: 1;
+  z-index: 1;
+  margin: auto;
+}
+
+div {
+  margin: auto;
+}
+
+h4 {
+  text-align: center;
+}
+h4 p {
+  text-align: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
