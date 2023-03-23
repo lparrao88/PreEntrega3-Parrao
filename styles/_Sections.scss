@@ -26,6 +26,13 @@ aside {
     background-color: rgb(255, 255, 255);
     grid-area: aside;
     position: relative;
+    transition: all 2s; 
+}
+
+aside:hover {
+    height: 510px; width: 510px;
+    padding: 20px;
+    background-color: black;
 }
 
 footer {
@@ -43,6 +50,12 @@ button {
     font-weight: bold;
     position: relative;
     border-radius: 2px;
+}
+
+button {
+    @extend button ;
+    background-color: black;
+    color: red;
 }
 
 .redes {
@@ -65,4 +78,13 @@ li {
 #Navbar {
     z-index: 1;
     margin: auto;
+}
+
+.card-header {
+    background: linear-gradient(to left, blue, rgb(238, 235, 235));
+}
+
+.btn-primary {
+    background: radial-gradient(ellipse 20px 10px, rgb(250, 245, 245), rgb(24, 155, 79) 
+    );
 }
