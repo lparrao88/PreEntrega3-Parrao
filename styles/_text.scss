@@ -1,0 +1,21 @@
+$ancho: 100%;
+p {
+    width: $ancho;
+
+    @if ($ancho > 75%) {
+        font-size: medium;
+    } @else {
+        font-size: smaller
+    }
+
+    }
+
+
+    $fuentes: "Roboto", "Arial", "Verdana";
+
+    @each $fuente in $fuentes {
+        .font-#{$fuente} {
+            font-family: $fuente, sans-serif;
+            font-size: 16px;
+        }
+    }

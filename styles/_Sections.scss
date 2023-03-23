@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
     position: relative;
 }
@@ -14,15 +14,12 @@ header {
 #Destacados {
     background-color: rgb(255, 255, 255);
     grid-area: section-1;
-    margin: auto;
 
 }
 
 section {
     background-color: rgb(255, 255, 255);
     grid-area: section-2;
-    margin: auto;
-    justify-content: center;
 }
 
 aside {
@@ -68,17 +65,4 @@ li {
 #Navbar {
     z-index: 1;
     margin: auto;
-}
-
-div {
-    margin: auto;
-
-}
-
-h4 {
-    text-align: center;
-    p {
-        text-align: center;
-        justify-content: center;
-    }
 }
